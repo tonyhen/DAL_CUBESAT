@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/30/22||12:45:06" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="AssembleC1" uid="AssembleC1" version="128">
+<AssemblyFile name="AssembleC1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Reaction Wheel A.1-1" uid="Reaction Wheel A.1-1" entityUid="Reaction Wheel A.1*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.21758482061249151 0.16688369320492999 0.28624225568098161</Translation>
+</Transform>
+</Instance>
+<Instance name="Reaction Wheel A.1-3" uid="Reaction Wheel A.1-3" entityUid="Reaction Wheel A.1*:*默认">
+<Transform>
+<Rotation>-0.94395869405706623 0 -0.33006360586117012 -0.33006360586117012 0 0.94395869405706623 0 1 0</Rotation>
+<Translation>0.21758482061249154 0.206647428216334 0.24624225568098163</Translation>
+</Transform>
+</Instance>
+<Instance name="Satellite frame C.1-1" uid="Satellite frame C.1-1" grounded="true" entityUid="Satellite frame C.1*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.21758482061249151 0.25688369320492999 0.28624225568098161</Translation>
+</Transform>
+</Instance>
+<Instance name="Reaction Wheel A.1-2" uid="Reaction Wheel A.1-2" entityUid="Reaction Wheel A.1*:*默认">
+<Transform>
+<Rotation>0 1 0 0.381849318686593 0 -0.92422459273630297 -0.92422459273630275 0 -0.38184931868659239</Rotation>
+<Translation>0.17758482061249156 0.20688369320493002 0.28624225568098177</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Satellite frame C.1-1</Uid>
+</InstancePath>
+<Position>0 -0.089999999999999997 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Reaction Wheel A.1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Satellite frame C.1-1</Uid>
+</InstancePath>
+<Position>0 -0.089999999999999997 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Reaction Wheel A.1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Satellite frame C.1-1</Uid>
+</InstancePath>
+<Position>-0.040000000000000008 -0.049999999999999989 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Reaction Wheel A.1-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Satellite frame C.1-1</Uid>
+</InstancePath>
+<Position>-0.040000000000000008 -0.049999999999999989 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Reaction Wheel A.1-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Satellite frame C.1-1</Uid>
+</InstancePath>
+<Position>0 -0.050236264988595986 -0.03999999999999998</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Reaction Wheel A.1-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Satellite frame C.1-1</Uid>
+</InstancePath>
+<Position>0 -0.050236264988595986 -0.03999999999999998</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Reaction Wheel A.1-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Reaction Wheel A.1" uid="Reaction Wheel A.1*:*默认" version="146">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Reaction Wheel A.1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.066501233291188747</Mass>
+<CenterOfMass>0 0.0050000000000000001 0</CenterOfMass>
+<Inertia>1.3588418669166231e-05 2.6068483450145983e-05 1.3588418669166233e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Reaction Wheel A.1_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Satellite frame C.1" uid="Satellite frame C.1*:*默认" version="446">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Satellite frame C.1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.3299443768653654</Mass>
+<CenterOfMass>0.00078196153252672678 0.027214604968067671 0.00084090934323370766</CenterOfMass>
+<Inertia>0.019238511913440597 0.0027673744031270144 0.019590697884970944 2.8648238062332045e-05 8.7451657366194824e-07 2.6049135011962518e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Satellite frame C.1_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
