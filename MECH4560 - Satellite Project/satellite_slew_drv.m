@@ -24,8 +24,8 @@ Kd = 1000;
 Ki = 0;
 
 %Worst case disturbance
-%Tworst = 0;
-Tworst = 5.078*10^(-7);
+Tworst = 0;
+%Tworst = 5.078*10^(-7);
 T1 = 5*Tworst;
 disturbance = [period 0 0 T1];
 
@@ -59,14 +59,14 @@ theta = [theta1; theta2];
 zero = zeros(3000,1); %zero matrix
 one =ones(3000,1); %one matrix 
 slew = pi/6*one; %keep desired altitude after performing maneuver
-% des_att =...
-%     [time  zero  zero  theta;
-%       time2 zero  theta slew;
-%       time3 theta slew  slew];
+des_att =...
+[time  zero  zero  theta;
+time2 zero  theta slew;
+time3 theta slew  slew];
 
 %for worst case torque analysis
-des_att = ...
-    [time zero zero zero];
+%des_att = ...
+%    [time zero zero zero];
 
 
 %simulate the system
