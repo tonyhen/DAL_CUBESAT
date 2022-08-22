@@ -18,8 +18,12 @@ re = 6371000;
 %v = satelliteScenarioViewer(sc);
 %intvls = accessIntervals(ac);
 
+% Pulls the state of the satellite in ECEF coordinate frame 
 [pos,vel] = states(sat,"CoordinateFrame","ecef");
 [row,col] = size(pos);
 sun = zeros(3,col);
 
+%Outputs the data as a csv so to cut down on runtime
+writematrix(pos,'pos.csv')
+writematrix(vel,'vel.csv')
 
