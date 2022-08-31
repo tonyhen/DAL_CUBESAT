@@ -26,4 +26,6 @@ sun = zeros(3,col);
 %Outputs the data as a csv so to cut down on runtime
 writematrix(pos,'pos.csv')
 writematrix(vel,'vel.csv')
+writematrix(mission.StartDate, 'MissionStartDate.csv')
+writematrix(mission.Duration, 'MissionDuration.csv')
 
